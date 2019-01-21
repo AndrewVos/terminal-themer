@@ -47,12 +47,15 @@ public class MyApp : Gtk.Application {
         }
     }
     void load_themes (Gtk.Window window) {
-        string fileName = "themes.json";
+        var session = new Soup.Session ();
+        var message = new Soup.Message ("GET", "https://raw.githubusercontent.com/AndrewVos/terminal-themer/master/themes.json");
+    session.send_message (message);
+
 	Json.Parser parser = new Json.Parser ();
 	try {
-		parser.load_from_file (fileName);
+            parser.load_from_data ((string) message.response_body.flatten ().data, -1);
 	} catch (Error e) {
-		stdout.printf ("Unable to parse `%s': %s\n", fileName, e.message);
+		stdout.printf ("Unable to parse json: %s\n", e.message);
 		return;
 	}
 
