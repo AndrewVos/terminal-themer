@@ -1,29 +1,6 @@
 [
   {
-    "description": "Default Dark",
-    "foreground": "#94a3a5",
-    "background": "rgba(37, 46, 50, 0.95)",
-    "palette": [
-      "#073642",
-      "#dc322f",
-      "#859900",
-      "#b58900",
-      "#268bd2",
-      "#ec0048",
-      "#2aa198",
-      "#94a3a5",
-      "#586e75",
-      "#cb4b16",
-      "#859900",
-      "#b58900",
-      "#268bd2",
-      "#d33682",
-      "#2aa198",
-      "#6c71c4"
-    ]
-  },
-  {
-    "description": "Default Light",
+    "description": "High Contrast",
     "foreground": "#333",
     "background": "#fff",
     "palette": [
@@ -46,7 +23,30 @@
     ]
   },
   {
-    "description": "Default Medium",
+    "description": "Solarised Dark",
+    "foreground": "#94a3a5",
+    "background": "rgba(37, 46, 50, 0.95)",
+    "palette": [
+      "#073642",
+      "#dc322f",
+      "#859900",
+      "#b58900",
+      "#268bd2",
+      "#ec0048",
+      "#2aa198",
+      "#94a3a5",
+      "#586e75",
+      "#cb4b16",
+      "#859900",
+      "#b58900",
+      "#268bd2",
+      "#d33682",
+      "#2aa198",
+      "#6c71c4"
+    ]
+  },
+  {
+    "description": "Solarised Light",
     "foreground": "#586e75",
     "background": "rgba(253, 246, 227, 0.95)",
     "palette": [
