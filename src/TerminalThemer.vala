@@ -101,6 +101,9 @@ public class MyApp : Gtk.Application {
             apply.get_style_context ().add_class ("apply");
             paletteContainer.add (apply);
             apply.clicked.connect (() => {
+                GLib.Process.spawn_command_line_sync ("gsettings set io.elementary.terminal.settings foreground '" + theme.foreground + "'");
+                GLib.Process.spawn_command_line_sync ("gsettings set io.elementary.terminal.settings background '" + theme.background + "'");
+                GLib.Process.spawn_command_line_sync ("gsettings set io.elementary.terminal.settings palette '" + string.join(":", theme.palette) + "'");
             });
         }
     }
