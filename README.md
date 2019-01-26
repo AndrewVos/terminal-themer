@@ -7,7 +7,7 @@ Theme changer for Elementary OS Terminal
 ## Building
 
 ```
-sudo apt install libsoup2.4-dev
+sudo apt install libsoup2.4-dev valac libjson-glib-dev
 ./build.sh
 ./TerminalThemer
 ```
